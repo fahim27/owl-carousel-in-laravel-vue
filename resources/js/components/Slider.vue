@@ -3,14 +3,17 @@
     <div class="row justify-content-center">
       <div class="col-md-10">
         <div class="card">
-          <div class="card-header">Slider</div>
+          <div class="card-header text-center"><h2>owl carousel laravel and vue</h2> </div>
 
           <div class="card-body" v-if="sliders">
-            <carousel :items='1' :autoplayTimeout="2000" :autoplay="true" :nav="false">
+            <carousel :items='1' :autoplayTimeout="2000" :autoplay="true" :nav="false" >
 
               <img v-for="slider in sliders" :src="slider.image" />
               
             </carousel>
+          </div>
+          <div class="card-footer text-right">
+              <h5><i>Fahim Muntasir</i></h5>
           </div>
         </div>
       </div>
